@@ -15,6 +15,10 @@ body {
   min-height: 100vh;
 }
 
+img {
+  display: block;
+}
+
 #root {
   width: 100%;
 }

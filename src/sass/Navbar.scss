@@ -1,0 +1,36 @@
+@import "colors.scss";
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .logo {
+    width: 4rem;
+  }
+
+  .menu {
+    cursor: pointer;
+    width: 4rem;
+  }
+
+  .links {
+    display: flex;
+    list-style-type: none;
+    column-gap: 3rem;
+    align-items: center;
+
+    li {
+      a {
+        text-decoration: none;
+        color: $dark-grayish-blue;
+        letter-spacing: 0.5px;
+        font-size: 1.2rem;
+      }
+
+      a:hover {
+        color: $soft-red;
+      }
+    }
+  }
+}
