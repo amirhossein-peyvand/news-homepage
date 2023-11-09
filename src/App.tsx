@@ -2,6 +2,7 @@ import "./sass/App.scss";
 import Navbar from "./components/Navbar";
 import MainContent from "./components/MainContent";
 import Sidebar from "./components/Sidebar";
+import ItemsContainer from "./components/ItemsContainer";
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <Navbar />
       <MainContent />
       <Sidebar />
+      <ItemsContainer />
     </div>
   );
 }

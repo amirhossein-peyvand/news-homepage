@@ -1,0 +1,40 @@
+@import "colors.scss";
+
+.item {
+  display: flex;
+  align-items: center;
+
+  column-gap: 2rem;
+
+  .imageContainer {
+    img {
+      min-width: 3rem;
+      width: 7rem;
+    }
+  }
+
+  .contents {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.4rem;
+
+    span {
+      color: $grayish-blue;
+      font-size: 2rem;
+      font-weight: 700;
+    }
+
+    h5 {
+      color: $very-dark-blue;
+      font-size: 1.3rem;
+      font-weight: 800;
+    }
+
+    p {
+      color: $dark-grayish-blue;
+      font-size: 1.1rem;
+      letter-spacing: 0.5px;
+      line-height: 1.4;
+    }
+  }
+}
