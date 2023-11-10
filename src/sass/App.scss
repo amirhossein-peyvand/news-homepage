@@ -1,6 +1,99 @@
 .app {
   margin: 0 auto;
-  min-width: 200px;
+  min-width: 18rem;
   padding-top: 2.5rem;
   width: 95%;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 4rem;
+}
+
+@media screen and (min-width: 560px) {
+  .app {
+    .mainContent {
+      .mainImageContainer {
+        img {
+          height: 45vh;
+          object-fit: cover;
+        }
+      }
+
+      .content {
+        .desc {
+          font-size: 2rem;
+        }
+
+        .readMoreBtn {
+          width: 20rem;
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .app {
+    width: 80%;
+    gap: 3rem;
+    max-width: 125rem;
+    margin: 0 auto;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+      "navbar navbar navbar"
+      "mainContent mainContent sidebar"
+      "item1 item2 item3";
+
+    .navbar {
+      grid-area: navbar;
+    }
+
+    .mainContent {
+      grid-area: mainContent;
+      row-gap: 1rem;
+
+      .content {
+        align-items: center;
+        .title {
+          width: 50%;
+          font-size: 3.5rem;
+        }
+
+        div {
+          width: 50%;
+
+          .desc {
+            font-size: 1.4rem;
+          }
+          .readMoreBtn {
+            width: 14rem;
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+
+    .sidebar {
+      grid-area: sidebar;
+    }
+
+    .itemsContainer {
+      grid-area: itemsContainer;
+      justify-content: space-between;
+
+      flex-direction: row;
+    }
+
+    .item1 {
+      grid-area: item1;
+    }
+
+    .item2 {
+      grid-area: item2;
+    }
+
+    .item3 {
+      grid-area: item3;
+    }
+  }
 }

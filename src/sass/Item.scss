@@ -26,8 +26,13 @@
 
     h5 {
       color: $very-dark-blue;
+      cursor: pointer;
       font-size: 1.3rem;
       font-weight: 800;
+    }
+
+    h5:hover {
+      color: $soft-red;
     }
 
     p {

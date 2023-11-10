@@ -1,15 +1,16 @@
 import "../sass/Item.scss";
 
 interface Props {
+  className: string;
   desc: string;
   image: string;
   number: string;
   title: string;
 }
 
-const Item = ({ desc, image, number, title }: Props) => {
+const Item = ({ className, desc, image, number, title }: Props) => {
   return (
-    <article className="item">
+    <article className={`item ${className}`}>
       <div className="imageContainer">
         <img src={image} alt={image} />
       </div>
