@@ -4,7 +4,7 @@ import menu from "../assets/icon-menu.svg";
 import { useMediaQuery } from "react-responsive";
 
 const Navbar = () => {
-  const isGreaterThan768px = useMediaQuery({ query: "(min-width: 768px)" });
+  const isGreaterThan768px = useMediaQuery({ query: "(min-width: 1000px)" });
 
   const mobile = (
     <nav className="navbar">

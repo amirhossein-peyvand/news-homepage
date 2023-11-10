@@ -1,15 +1,17 @@
 .app {
+  display: grid;
+  gap: 4rem;
+  grid-template-columns: 1fr;
   margin: 0 auto;
   min-width: 18rem;
   padding-top: 2.5rem;
   width: 95%;
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 4rem;
 }
 
 @media screen and (min-width: 560px) {
   .app {
+    width: 50rem;
+
     .mainContent {
       .mainImageContainer {
         img {
@@ -19,30 +21,53 @@
       }
 
       .content {
+        flex-direction: column;
+
         .desc {
           font-size: 2rem;
         }
 
         .readMoreBtn {
-          width: 20rem;
           font-size: 1.5rem;
+          width: 20rem;
         }
       }
     }
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 800px) and (max-width: 999px) {
   .app {
-    width: 80%;
+    width: 55rem;
+
+    .item {
+      .contents {
+        span {
+          font-size: 2.2rem;
+        }
+
+        h5 {
+          font-size: 1.7rem;
+        }
+        p {
+          font-size: 1.3rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .app {
     gap: 3rem;
-    max-width: 125rem;
-    margin: 0 auto;
-    grid-template-columns: repeat(3, 1fr);
     grid-template-areas:
       "navbar navbar navbar"
       "mainContent mainContent sidebar"
       "item1 item2 item3";
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0 auto;
+    max-width: 120rem;
+    width: 85%;
 
     .navbar {
       grid-area: navbar;
@@ -54,9 +79,10 @@
 
       .content {
         align-items: center;
+        flex-direction: row;
         .title {
-          width: 50%;
           font-size: 3.5rem;
+          width: 50%;
         }
 
         div {
@@ -66,8 +92,8 @@
             font-size: 1.4rem;
           }
           .readMoreBtn {
-            width: 14rem;
             font-size: 1rem;
+            width: 14rem;
           }
         }
       }
@@ -79,9 +105,8 @@
 
     .itemsContainer {
       grid-area: itemsContainer;
-      justify-content: space-between;
-
       flex-direction: row;
+      justify-content: space-between;
     }
 
     .item1 {

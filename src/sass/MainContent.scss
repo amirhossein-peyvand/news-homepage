@@ -55,18 +55,3 @@
     }
   }
 }
-
-@media screen and (min-width: 768px) {
-  .mainContent {
-    row-gap: 3.5rem;
-
-    .content {
-      flex-direction: row;
-      column-gap: 2rem;
-
-      .title {
-        font-size: 4rem;
-      }
-    }
-  }
-}

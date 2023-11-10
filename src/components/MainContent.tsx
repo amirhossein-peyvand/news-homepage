@@ -4,7 +4,7 @@ import imageWeb3Desktop from "../assets/image-web-3-desktop.jpg";
 import { useMediaQuery } from "react-responsive";
 
 const MainContent = () => {
-  const isGreaterThan768px = useMediaQuery({ query: "(min-width:768px)" });
+  const isGreaterThan768px = useMediaQuery({ query: "(min-width:1000px)" });
 
   return (
     <article className="mainContent">

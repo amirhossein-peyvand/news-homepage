@@ -12,18 +12,21 @@ const ItemsContainer = () => {
         image={retroPcs}
         number="01"
         title="Reviving Retro PCs"
+        className="item1"
       />
       <Item
         desc="Our best picks for various needs and budgets."
         image={laptops}
         number="02"
         title="Top 10 Laptops of 2022"
+        className="item2"
       />
       <Item
         desc="How the pandemic has sparked fresh opportunities."
         image={gamingGrowth}
         number="03"
         title="The Growth of Gaming"
+        className="item3"
       />
     </section>
   );
