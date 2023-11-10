@@ -9,9 +9,19 @@ nav {
     width: 4rem;
   }
 
-  .menu {
+  .menu,
+  .close {
     cursor: pointer;
-    width: 4rem;
+  }
+
+  .menu {
+    width: 3.5rem;
+    height: 2.3rem;
+  }
+
+  .close {
+    height: 2.3rem;
+    z-index: 999;
   }
 
   .links {
